@@ -1,0 +1,33 @@
+{
+    "dataset" : "BaseDetectionDataset",
+    "dataset_dir" : "/content/drive/MyDrive/boostcamp/pstage3/data",
+    "train_augmentation" : "BaseTrainAugmentation",
+    "val_augmentation" : "TestAugmentation",
+    "test_augmentation" : "TestAugmentation",
+    "num_workers_data_loader" : 3,
+    "model" : "FasterRcnnCustom",
+    "backbone" : "vgg16",
+    "neck": "",
+    "criterion" : "",
+    "optimizer" : "Adam",
+    "optimizer_parameter_wo_lr" : {},
+    "lr" : 1e-4,
+    "scheduler" : "",
+    "scheduler_parameter" : {},
+    "batch_size" : 10,
+    "random_seed" : 21,
+    "epochs" : 30,
+    "val_every" : 1,
+
+    "saved_model_name" : "FasterRcnn_back_vgg16_best",
+    "saved_inference_config_path" : "/content/drive/MyDrive/boostcamp/pstage3/code/inference_config1_1.json",
+    "saved_dir" : "/content/drive/MyDrive/boostcamp/pstage3/code/saved",
+    
+    "submission_dir" : "/content/drive/MyDrive/Colab Notebooks/pstage3_object_detection/submission",
+    "submission_user_key" : "",
+
+    "is_wandb" : 1,
+    "wandb_project_name" : "pstage3_object_detection",
+    "wandb_group" : "FasterRcnn/back:vgg16",
+    "wandb_experiment_name" : ""
+}
